@@ -38,6 +38,11 @@ app.use(express.static(path.join(__dirname, 'front/build')));
 
 app.use('/', indexRouter);
 
+// create a way for the express to serve react home page
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/front/build/index.html');
+});
+
 //listen to a specific port.
 app.listen(process.env.PORT || 5000, () => {
   console.log(`Start listening for the port ${process.env.PORT}`);
