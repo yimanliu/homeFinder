@@ -1,6 +1,11 @@
 .idea/
 .env
 
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
+
 # Ignore the node_modules directory
 node_modules/
 front/node_modules/

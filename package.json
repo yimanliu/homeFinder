@@ -1,10 +1,12 @@
 {
-  "name": "myblog",
+  "name": "homefinder",
   "version": "0.0.0",
+  "description": "The project is for NEU CS 5610 Assignment 4. The author of the project and the instructor of the course preserve any right to the content of the project",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
   },
+
   "dependencies": {
     "axios": "^0.21.0",
     "bcrypt": "^5.0.0",
