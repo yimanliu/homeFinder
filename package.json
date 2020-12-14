@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./bin/www",
-    "heroku-postbuild": "cd react && npm install && npm run build"
+    "start": "nodemon ./bin/www"
   },
 
   "dependencies": {
