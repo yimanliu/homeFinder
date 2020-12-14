@@ -4,7 +4,9 @@
   "description": "The project is for NEU CS 5610 Assignment 4. The author of the project and the instructor of the course preserve any right to the content of the project",
   "private": true,
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./bin/www",
+    "heroku-postbuild": "cd react && npm install && npm run build"
   },
 
   "dependencies": {
@@ -31,5 +33,8 @@
     "nodemon": "^2.0.6",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
+  },
+  "engines": {
+    "node": "12.18.4"
   }
 }
