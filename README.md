@@ -33,6 +33,7 @@
 
 ```bash
 $ git clone https://github.com/yimanliu0/homeFinder
+$ cd homeFinder
 $ npm install
 $ cd front
 $ npm install
