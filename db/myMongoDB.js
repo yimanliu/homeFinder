@@ -3,8 +3,7 @@ function MyDB() {
   const myDB = {};
 
   const uri =
-    'mongodb+srv://yimanliu:yimanliu123@cluster.yvawa.mongodb.net/db?retryWrites=true&w=majority' ||
-    'mongodb://localhost:27017';
+    'mongodb+srv://yimanliu:yimanliu123@cluster.eya5x.mongodb.net/db?retryWrites=true&w=majority';
 
   // Load apt normal order no sort
   myDB.getApt = async () => {
