@@ -5,9 +5,10 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./bin/www"
+    "start": "node app.js"
   },
-
+  "author": "Yiman Liu",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.21.0",
     "bcrypt": "^5.0.0",
