@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import "./App.css";
-import Dashboard from "./components/scripts/Dashboard.js";
-import Login from "./components/scripts/Login.js";
-import RegisterForm from "./components/scripts/RegisterForm.js";
+import React, { useState } from 'react';
+import './App.css';
+import Dashboard from './components/scripts/Dashboard.js';
+import Login from './components/scripts/Login.js';
+import RegisterForm from './components/scripts/RegisterForm.js';
 
 function App() {
   const [user, setUser] = useState();
@@ -12,14 +12,14 @@ function App() {
   const setHomepage = () => {
     if (login && !user && !register) {
       return (
-        <div className={"app-login"}>
+        <div className={'app-login'}>
           <Login setUser={setUser} setRegister={setRegister} />
         </div>
       );
     } else if (!login && !register && !user) {
       return (
         <div className="jumbotron" id="introduction">
-          <h1 className="display-4" style={{ fontSize: "25px" }}>
+          <h1 className="display-4" style={{ fontSize: '25px' }}>
             Welcome to BetterHome!
           </h1>
           <hr className="my-4" />
@@ -32,17 +32,17 @@ function App() {
             <button
               className="btn btn-primary btn-lg"
               style={{
-                color: "#D70F4E",
-                border: "none",
-                backgroundColor: "transparent",
-                fontSize: "17px",
+                color: '#D70F4E',
+                border: 'none',
+                backgroundColor: 'transparent',
+                fontSize: '17px',
               }}
               onClick={() => setLogin(true)}
             >
-              {" "}
+              {' '}
               <i
                 className="fas fa-sign-in-alt"
-                style={{ color: "#D70F4E", fontSize: "1.5em" }}
+                style={{ color: '#D70F4E', fontSize: '1.5em' }}
               ></i>
               Sign in to explore
             </button>
@@ -59,8 +59,9 @@ function App() {
       <nav
         className="navbar navbar-light bg-light justify-content-between"
         id="home-nav"
+        aria-label="homepagenav"
       >
-        <h1 className="navbar-brand" style={{ color: "#d70f4e" }}>
+        <h1 className="navbar-brand" style={{ color: '#d70f4e' }}>
           BetterHome
         </h1>
       </nav>
